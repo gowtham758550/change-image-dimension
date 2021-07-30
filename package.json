@@ -1,5 +1,8 @@
 {
   "name": "change-image-dimension",
+  "engines": {
+    "node": "16.5.0"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
