@@ -1,0 +1,23 @@
+{
+  "name": "change-image-dimension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "live": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.19.2",
+    "fastify-file-upload": "^3.0.0",
+    "fastify-multipart": "^4.0.7",
+    "fastify-static": "^4.2.2",
+    "sharp": "^0.28.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
