@@ -56,4 +56,4 @@ fastify.get('/download', function (req, reply) {
     return reply.sendFile('converted.jpg')
 })
 
-app.listen(server_port, server_host)
+fastify.listen(server_port, server_host)
