@@ -9,6 +9,8 @@ const paht = require('path')
 const {pipeline} = require('stream')
 const path = require("path")
 const pump = util.promisify(pipeline)
+var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
 
 async function convert (inputFile) {
     sharp(inputFile).resize({width: 189,height: 264}).toFile("converted.jpg").then(function(newFileInfo) {
@@ -54,4 +56,4 @@ fastify.get('/download', function (req, reply) {
     return reply.sendFile('converted.jpg')
 })
 
-fastify.listen(3000)
+app.listen(server_port, server_host)
